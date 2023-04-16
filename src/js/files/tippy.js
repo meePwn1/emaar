@@ -29,8 +29,7 @@ flsModules.tippy = tippy('[data-template]', {
 		modifiers: [{
 			name: "flip",
 			options: {
-				fallbackPlacements: [],
-				enabled: false
+				fallbackPlacements: ['top'],
 			}
 		}]
 	}

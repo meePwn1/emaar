@@ -2960,8 +2960,7 @@
                 modifiers: [ {
                     name: "flip",
                     options: {
-                        fallbackPlacements: [],
-                        enabled: false
+                        fallbackPlacements: [ "top" ]
                     }
                 } ]
             }
