@@ -2960,8 +2960,8 @@
                 modifiers: [ {
                     name: "flip",
                     options: {
-                        rootBoundary: "document",
-                        fallbackPlacements: [ "top" ]
+                        fallbackPlacements: [],
+                        enabled: false
                     }
                 } ]
             }
