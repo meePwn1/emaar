@@ -1,179 +1,427 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Верстка «NEW_PROJECT_NAME»</title>
-</head>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"EMAAR"
+})
 
 <body>
-	<div class="rootpage">
-		<h1>Верстка «NEW_PROJECT_NAME»</h1>
-		<div class="rootpage__info">
-			Описание проекта
-		</div>
-		<h2>Готовые страницы:</h2>
-		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html">Главная</a></li>
-		</ol>
-		<h2>Попапы:</h2>
-		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html#"></a></li>
-		</ol>
-		<div class="rootpage__tnx">
-			<h2>Спасибо за заказ!</h2>
-			<p>Буду рад(а) хорошему отзыву.</p>
-			<p>Обращайтесь еще!</p>
-		</div>
-		<div class="rootpage__contacts">
-			<h2>Мои контакты:</h2>
-			<p>Почта: <a href="mailto:azamatk9799@gmail.com">azamatk9799@gmail.com</a></p>
-			<p>Телефон: <a href="tel:998934600945">+998 (93) 460-09-45</a></p>
-			<p>Соц. сети: <a href="https://t.me/azmtkzkv" target="_blank">Telegram</a></p>
-		</div>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<section class="page__main main">
+				<div class="main_bg">
+					<div class="main__container">
+						<div class="main__content">
+							<a href="#" class="main__logo">
+								<img src="@img/logo.svg" alt="logo">
+							</a>
+							<div class="main__title title">Dubai creek harbour</div>
+							<div class="main__info">
+								<div class="main__item">
+									<span>20%</span>to book <br> a unit
+								</div>
+								<div class="main__item">
+									<span>4 years</span>paymant <br> plan
+								</div>
+								<div class="main__item">
+									<span>aed 2.2mln</span>prices <br> from
+								</div>
+							</div>
+							<a href="" class="main__see"><span>See project</span> <img src="@img/icons/arrow-main.svg" alt="arrow-right"> </a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__homes homes">
+				<div class="homes__container">
+					<div class="homes__body">
+						<div data-da=".homes__content,991.98,1" class="homes__image">
+							<img data-src="@img/homes/01.jpg" alt="city">
+						</div>
+						<div class="homes__content">
+							<div data-watch class="homes__title title">AVAILABLE HOMES FOR SALE BY EMAAR PROPERTIES</div>
+							<p class="homes__text">
+								Emaar Properties is one of the world’s most valuable and admired real estate development companies. With proven competencies in properties, shopping malls & retail and hospitality &
+								leisure.Emaar Properties is one of the world’s most valuable and admired real estate development companies
+							</p>
+							<div class="homes__info">
+								<div class="homes__item">
+									<span>$10.9 bln</span>Market cap
+								</div>
+								<div class="homes__item">
+									<span>$7.7 bln</span>Revenue
+								</div>
+								<div class="homes__item">
+									<span>$1 bln</span>Net profit
+								</div>
+							</div>
+							<a data-popup="#homes" href="#" class="homes__button button">see more</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__projects projects">
+				<div class="projects__container">
+					<div data-watch class="projects__title title">top projects</div>
+					<div class="projects__items">
+						<a href="" class="projects__item">
+							<div class="projects__image">
+								<img data-src="@img/projects/01.jpg" alt="city">
+								<div class="projects__content">
+									<div class="projects__project-name title">creek rise</div>
+									<div class="projects__value"><span>FROM</span> AED 2,288,888</div>
+								</div>
+							</div>
+						</a>
+						<a href="" class="projects__item">
+							<div class="projects__image">
+								<img data-src="@img/projects/02.jpg" alt="city">
+								<div class="projects__content">
+									<div class="projects__project-name title">EXPO GOLF VILLAS 6</div>
+									<div class="projects__value"><span>FROM</span> AED 2,288,888</div>
+								</div>
+							</div>
+						</a>
+						<a href class="projects__item">
+							<div class="projects__image">
+								<img data-src="@img/projects/03.jpg" alt="city">
+								<div class="projects__content">
+									<div class="projects__project-name title">HILLS PARK</div>
+									<div class="projects__value"><span>FROM</span> AED 2,288,888</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="page__location location">
+				<div class="location__wrapper">
+					<div data-watch class="location__title title">choose the best location for you</div>
+					<div class="location__tooltips">
+						<div class="location__item">
+							<div class="location__label">DUBAI CREEK HARBOUR</div>
+							<button data-template="creek" type="button" class="location__tooltip">
+							</button>
+							<a href="" id="creek" class="location__tooltip-item">
+								<div class="location__image">
+									<img src="@img/location/01.jpg" alt="Dubai">
+								</div>
+								<div class="location__content"><span>DUBAI CREEK HARBOUR</span></div>
+							</a>
+						</div>
+						<div class="location__item">
+							<div class="location__label">DUBAI HILLS ESTATE</div>
+							<button data-template="hills" type="button" class="location__tooltip">
+							</button>
+							<a href="" id="hills" class="location__tooltip-item">
+								<div class="location__image">
+									<img src="@img/location/01.jpg" alt="Dubai">
+								</div>
+								<div class="location__content"><span>DUBAI HILLS ESTATE</span></div>
+							</a>
+						</div>
+						<div class="location__item">
+							<div class="location__label">EMAAR SOUTH</div>
+							<button data-template="emaar" type="button" class="location__tooltip">
+							</button>
+							<a href="" id="emaar" class="location__tooltip-item">
+								<div class="location__image">
+									<img src="@img/location/01.jpg" alt="Dubai">
+								</div>
+								<div class="location__content"><span>EMAAR SOUTH</span></div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__portfolio portfolio">
+				<div class="portfolio__container">
+					<div class="portfolio__aside aside-portfolio">
+						<div class="aside-portfolio__title">community</div>
+						<div class="aside-portfolio__filter options">
+							<div class="options__item">
+								<input id="o_1" class="options__input" checked type="radio" value="1" name="option">
+								<label for="o_1" class="options__label"><span class="options__text">dubai creek harbour</span></label>
+							</div>
+							<div class="options__item">
+								<input id="o_2" class="options__input" type="radio" value="2" name="option">
+								<label for="o_2" class="options__label"><span class="options__text">dubai hills estate</span></label>
+							</div>
+							<div class="options__item">
+								<input id="o_3" class="options__input" type="radio" value="3" name="option">
+								<label for="o_3" class="options__label"><span class="options__text">emaar south</span></label>
+							</div>
+						</div>
+						<div class="aside-portfolio__title">Projects</div>
+						<ul class="aside-portfolio__menu">
+							<li><a data-goto-top="30" data-goto="#creed" href="#" class="aside-portfolio__link">CREEK RISE</a></li>
+							<li><a data-goto-top="30" data-goto="#cove" href="#" class="aside-portfolio__link">THE COVE</a></li>
+							<li><a data-goto-top="30" data-goto="#gate" href="#" class="aside-portfolio__link">CREEK GATE</a></li>
+						</ul>
+					</div>
+					<div class="portfolio__content content-portfolio">
+						<div id="creed" data-watch-threshold='0.3' data-watch="navigator" class="content-portfolio__creek portfolio-item">
+							<div class="portfolio-item__description">
+								<div class="portfolio-item__image">
+									<img data-src="@img/portfolio/creek/description.jpg" alt="city">
+								</div>
+								<div class="portfolio-item__content">
+									<div class="portfolio-item__content-title title">creek rise </div>
+									<div class="portfolio-item__text">At Dubai Creek Harbour, you will experience more of what really matters. More laughs shared with friends. More memories made. A thriving community
+										to live, work, play, and capture moments to behold and cherish. A home where every view is a view to live for.
+									</div>
+								</div>
+							</div>
+							<div class="portfolio-item__slider-block">
+								<div class="portfolio-item__header">
+									<div class="portfolio-item__title title">AVAILABLE UNITS</div>
+									<div class="portfolio-item__pagination portfolio-item__pagination_creek"></div>
+								</div>
+								<div class="portfolio-item__navigation portfolio-item__navigation_prev portfolio-item__navigation_prev-creek">
+									<img data-src="@img/icons/arrow-slide.svg" alt="">
+								</div>
+								<div class="portfolio-item__navigation portfolio-item__navigation_next portfolio-item__navigation_next-creek">
+									<img data-src="@img/icons/arrow-slide-next.svg" alt="">
+								</div>
+								<div class="portfolio-item__slider portfolio-item__slider_creek portfolio-slider swiper">
+									<div class="portfolio-slider__wrapper swiper-wrapper">
+										<div class="portfolio-slider__slide swiper-slide">
+											<div class="portfolio-slider__image">
+												<img data-src="@img/portfolio/creek/01.jpg" alt="city">
+											</div>
+											<div class="portfolio-slider__content">
+												<div class="portfolio-slider__title title">creek rise</div>
+												<div class="portfolio-slider__label _icon-bed"><span>bedrooms 1-3</span></div>
+												<div class="portfolio-slider__text">Creek Rise comprises two beautifully designed residential high-rises with unparalleled views overlooking the Creek Island’s lush parkland,
+													set
+													in a family-oriented neighbourhood.
+												</div>
+												<div class="portfolio-slider__info"><span>FROM</span> AED 2 288 888</div>
+												<a data-popup="#portfolio" href="#" class="portfolio-slider__button button">get details</a>
+											</div>
+										</div>
+										<div class="portfolio-slider__slide swiper-slide">
+											<div class="portfolio-slider__image">
+												<img data-src="@img/portfolio/creek/01.jpg" alt="city">
+											</div>
+											<div class="portfolio-slider__content">
+												<div class="portfolio-slider__title title">Lorem, ipsum.</div>
+												<div class="portfolio-slider__label _icon-bed"><span>bedrooms 1-3</span></div>
+												<div class="portfolio-slider__text">Creek Rise comprises two beautifully designed residential high-rises with unparalleled views overlooking the Creek Island’s lush parkland,
+													set
+													in a family-oriented neighbourhood.
+												</div>
+												<div class="portfolio-slider__info"><span>FROM</span> AED 2 288 888</div>
+												<a href="" class="portfolio-slider__button button">get details</a>
+											</div>
+										</div>
+										<div class="portfolio-slider__slide swiper-slide">
+											<div class="portfolio-slider__image">
+												<img data-src="@img/portfolio/creek/01.jpg" alt="city">
+											</div>
+											<div class="portfolio-slider__content">
+												<div class="portfolio-slider__title title">dolor sit</div>
+												<div class="portfolio-slider__label _icon-bed"><span>bedrooms 1-3</span></div>
+												<div class="portfolio-slider__text">Creek Rise comprises two beautifully designed residential high-rises with unparalleled views overlooking the Creek Island’s lush parkland,
+													set
+													in a family-oriented neighbourhood.
+												</div>
+												<div class="portfolio-slider__info"><span>FROM</span> AED 2 288 888</div>
+												<a href="" class="portfolio-slider__button button">get details</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="cove" data-watch-threshold='0.3' data-watch="navigator" class="content-portfolio__cove  portfolio-item">
+							<div class=" portfolio-item__description">
+								<div class=" portfolio-item__image">
+									<img data-src="@img/portfolio/cove/description.jpg" alt="city">
+								</div>
+								<div class=" portfolio-item__content">
+									<div class=" portfolio-item__content-title title">the cove </div>
+									<div class=" portfolio-item__text">Dubai Hills Estate is located in a prestigious area, Mohammed Bin Rashid City. The community features 18-hole championship golf course, 2 mln sq.
+										ft.
+										shopping center with sought after stores, restaurants, cafes, Tennis Academy with 10 outdoor and 4 indoor courts and Dubai Hills Park, which is the largest residential community
+										park in Dubai.
+									</div>
+								</div>
+							</div>
+							<div class=" portfolio-item__slider-block">
+								<div class=" portfolio-item__header">
+									<div class=" portfolio-item__title title">AVAILABLE UNITS</div>
+									<div class=" portfolio-item__pagination portfolio-item__pagination_cove"></div>
+								</div>
+								<div class=" portfolio-item__navigation  portfolio-item__navigation_prev  portfolio-item__navigation_prev-cove">
+									<img data-src="@img/icons/arrow-slide.svg" alt="">
+								</div>
+								<div class=" portfolio-item__navigation  portfolio-item__navigation_next  portfolio-item__navigation_next-cove">
+									<img data-src="@img/icons/arrow-slide-next.svg" alt="">
+								</div>
+								<div class="portfolio-item__slider portfolio-item__slider_cove portfolio-slider swiper">
+									<div class="portfolio-slider__wrapper swiper-wrapper">
+										<div class="portfolio-slider__slide swiper-slide">
+											<div class="portfolio-slider__image">
+												<img data-src="@img/portfolio/cove/01.jpg" alt="city">
+											</div>
+											<div class="portfolio-slider__content">
+												<div class="portfolio-slider__title title">PARK FIELD</div>
+												<div class="portfolio-slider__label _icon-bed"><span>bedrooms 1-3</span></div>
+												<div class="portfolio-slider__text">Embrace an urban lifestyle immeresed in nature in the green heart of Dubai. Surrounded by a seamless blend of green open spaces, exceptional
+													amenities, recreational facilities.
+												</div>
+												<div class="portfolio-slider__info"><span>FROM</span> AED 1 247 888</div>
+												<a href="" class="portfolio-slider__button button">get details</a>
+											</div>
+										</div>
+										<div class="portfolio-slider__slide swiper-slide">
+											<div class="portfolio-slider__image">
+												<img data-src="@img/portfolio/creek/01.jpg" alt="city">
+											</div>
+											<div class="portfolio-slider__content">
+												<div class="portfolio-slider__title title">dolor sit</div>
+												<div class="portfolio-slider__label _icon-bed"><span>bedrooms 1-3</span></div>
+												<div class="portfolio-slider__text">Creek Rise comprises two beautifully designed residential high-rises with unparalleled views overlooking the Creek Island’s lush parkland,
+													set
+													in a family-oriented neighbourhood.
+												</div>
+												<div class="portfolio-slider__info"><span>FROM</span> AED 2 288 888</div>
+												<a href="" class="portfolio-slider__button button">get details</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="gate" data-watch-threshold='0.3' data-watch="navigator" class="content-portfolio__gate  portfolio-item">
+							<div class=" portfolio-item__description">
+								<div class=" portfolio-item__image">
+									<img data-src="@img/portfolio/gate/description.jpg" alt="city">
+								</div>
+								<div class=" portfolio-item__content">
+									<div class=" portfolio-item__content-title title"> creek gate </div>
+									<div class=" portfolio-item__text">Be part of Dubai’s future. Live in a new community that supports your visions, where you can be an innovator and achieve your ambitions. Say hello
+										to
+										your future at Emaar South. </div>
+								</div>
+							</div>
+							<div class=" portfolio-item__slider-block">
+								<div class=" portfolio-item__header">
+									<div class=" portfolio-item__title title">AVAILABLE UNITS</div>
+									<div class=" portfolio-item__pagination portfolio-item__pagination_gate"></div>
+								</div>
+								<div class=" portfolio-item__navigation  portfolio-item__navigation_prev portfolio-item__navigation_prev-gate">
+									<img data-src="@img/icons/arrow-slide.svg" alt="">
+								</div>
+								<div class=" portfolio-item__navigation  portfolio-item__navigation_next portfolio-item__navigation_next-gate">
+									<img data-src="@img/icons/arrow-slide-next.svg" alt="">
+								</div>
+								<div class="portfolio-item__slider portfolio-item__slider_gate portfolio-slider swiper">
+									<div class="portfolio-slider__wrapper swiper-wrapper">
+										<div class="portfolio-slider__slide swiper-slide">
+											<div class="portfolio-slider__image">
+												<img data-src="@img/portfolio/gate/01.jpg" alt="city">
+											</div>
+											<div class="portfolio-slider__content">
+												<div class="portfolio-slider__title title">URBANA</div>
+												<div class="portfolio-slider__label _icon-bed"><span>bedrooms 2-3</span></div>
+												<div class="portfolio-slider__text">The perfect balance of innovation and suburban charm, this delightful community is home to 2 and 3-bedroom tiered and standard townhouses.
+												</div>
+												<div class="portfolio-slider__info"><span>FROM</span> AED 1 138 888</div>
+												<a href="" class="portfolio-slider__button button">get details</a>
+											</div>
+										</div>
+										<div class="portfolio-slider__slide swiper-slide">
+											<div class="portfolio-slider__image">
+												<img data-src="@img/portfolio/creek/01.jpg" alt="city">
+											</div>
+											<div class="portfolio-slider__content">
+												<div class="portfolio-slider__title title">Lorem, ipsum.</div>
+												<div class="portfolio-slider__label _icon-bed"><span>bedrooms 1-3</span></div>
+												<div class="portfolio-slider__text">Creek Rise comprises two beautifully designed residential high-rises with unparalleled views overlooking the Creek Island’s lush parkland,
+													set
+													in a family-oriented neighbourhood.
+												</div>
+												<div class="portfolio-slider__info"><span>FROM</span> AED 2 288 888</div>
+												<a href="" class="portfolio-slider__button button">get details</a>
+											</div>
+										</div>
+										<div class="portfolio-slider__slide swiper-slide">
+											<div class="portfolio-slider__image">
+												<img data-src="@img/portfolio/creek/01.jpg" alt="city">
+											</div>
+											<div class="portfolio-slider__content">
+												<div class="portfolio-slider__title title">dolor sit</div>
+												<div class="portfolio-slider__label _icon-bed"><span>bedrooms 1-3</span></div>
+												<div class="portfolio-slider__text">Creek Rise comprises two beautifully designed residential high-rises with unparalleled views overlooking the Creek Island’s lush parkland,
+													set
+													in a family-oriented neighbourhood.
+												</div>
+												<div class="portfolio-slider__info"><span>FROM</span> AED 2 288 888</div>
+												<a href="" class="portfolio-slider__button button">get details</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section data-prlx-parent data-prlx-center="center" class="page__payment payment">
+				<div class="payment__container">
+					<div class="payment__item">
+						<div data-axis="h" data-direction="1" data-coefficient="100" data-prlx class="payment__image">
+							<img data-src="@img/payment/01.jpg" alt="city">
+						</div>
+						<div data-axis="h" data-direction="-1" data-coefficient="90" data-prlx data-watch-threshold="0.5" data-watch data-watch-once class="payment__content">
+							<div class="payment__title title">payment option</div>
+							<div class="payment__text">Emaar properties offer various payment options to help make your property purchase as stress-free as possible. Some project have up to 3 Years payment
+								plan and we also offer mortgage option for ready units. Click "Enquire Now" below to get more information about payment options available for your purchase.</div>
+							<a href="" class="payment__button">enquire now</a>
+						</div>
+					</div>
+					<div class="payment__item payment__item_right">
+						<div data-axis="h" data-direction="-1" data-coefficient="200" data-prlx class="payment__image">
+							<img data-src="@img/payment/02.jpg" alt="city">
+						</div>
+						<div data-axis="h" data-prlx data-direction="1" data-coefficient="180" data-prlx data-watch-threshold="0.5" data-watch data-watch data-watch-once class="payment__content">
+							<div class="payment__title title">MORE <br>
+								ABOUT EMAAR</div>
+							<div class="payment__text">Emaar is the master-developer of Downtown Dubai, which occupies two of the most prestigious square kilometres in Dubai. Flanked on either side by Sheikh
+								Zayed Road and Financial Centre Road, this dynamic city hub has catalysed the economy and cemented Dubai’s reputation as a true global icon. Providing the ultimate metropolitan
+								lifestyle abounding with world-class landmarks, entertainment and glamour, Downtown Dubai is a true heart of the emirate.</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__callback callback">
+				<div class="callback__container">
+					<div class="callback__wrapper">
+						<div class="callback__title title">SPEAK TO A SPECIALIST</div>
+						<div class="callback__content">
+							<div class="callback__online">We are Online</div>
+							<div class="callback__text">Contact us below to get limited availability, payment plan and to book a unit.</div>
+						</div>
+						<div class="callback__form">
+							<form action="#">
+								<input autocomplete="off" type="text" name="form[]" placeholder="Your name" class="callback__input ">
+								<input autocomplete="off" type="email" name="form[]" placeholder="Your email" class="callback__input ">
+								<input autocomplete="off" type="tel" name="form[]" placeholder="Phone number" class="callback__input ">
+								<button type="submit" class="callback__button">request a call</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
 	</div>
+	@@include('html/_popup-homes.htm',{})
+	@@include('html/_popup-offer.htm',{})
+	@@include('html/_popup-portfolio.htm',{})
+	@@include('html/_js.htm',{})
 </body>
-<style>
-	@charset "UTF-8";
-	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
-
-	*,
-	*::before,
-	*::after {
-		padding: 0px;
-		margin: 0px;
-		border: 0px;
-		box-sizing: border-box;
-	}
-
-	html,
-	body {
-		height: 100%;
-		margin: 0;
-		padding: 0;
-		min-width: 320px;
-		width: 100%;
-		color: #fff;
-		background-color: #5e5373;
-	}
-
-	body {
-		font-family: Montserrat;
-		font-size: 100%;
-		line-height: 1;
-		font-size: 1rem;
-	}
-
-	a {
-		text-decoration: underline;
-		color: #ebe691
-	}
-
-	a:visited {
-		text-decoration: underline;
-		color: #aaa768;
-	}
-
-	a:hover {
-		text-decoration: none;
-	}
-
-	ul li {
-		list-style: none;
-	}
-
-	img {
-		vertical-align: top;
-	}
-
-	.wrapper {
-		width: 100%;
-		min-height: 100%;
-		overflow: hidden;
-	}
-
-	.rootpage {
-		padding: 30px;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-	}
-
-	@media (max-width: 767px) {
-		.rootpage {
-			padding: 30px 15px;
-		}
-	}
-
-	h1 {
-		color: #ebe691;
-		font-size: 2.5rem;
-		margin: 0px 0px 1.25rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h1 {
-			font-size: 1.85rem;
-			margin: 0px 0px 1.25rem 0px;
-		}
-	}
-
-	h2 {
-		color: #ebe691;
-		font-size: 1.25rem;
-		margin: 0px 0px 1rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h2 {
-			font-size: 1.125rem;
-			margin: 0px 0px 1rem 0px;
-		}
-	}
-
-	.rootpage__info {
-		line-height: 140%;
-		margin: 0px 0px 1.5rem 0px;
-	}
-
-	.rootpage__list {
-		margin: 0px 0px 2.25rem 1.25rem;
-	}
-
-	.rootpage__list li:not(:last-child) {
-		margin: 0px 0px 15px 0px;
-	}
-
-	.rootpage__contacts,
-	.rootpage__tnx {
-		border-radius: 200px;
-		padding: 20px 65px;
-		line-height: 140%;
-	}
-
-	@media (max-width: 767px) {
-
-		.rootpage__contacts,
-		.rootpage__tnx {
-			border-radius: 40px;
-			padding: 20px;
-		}
-	}
-
-	.rootpage__contacts {
-		background: #32b5a4;
-
-	}
-
-	.rootpage__contacts a {
-		color: #ebe691;
-	}
-
-	.rootpage__tnx {
-		background: #c22d63;
-		margin: 0px 0px 1rem 0px;
-	}
-</style>
 
 </html>
