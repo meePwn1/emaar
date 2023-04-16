@@ -1,0 +1,29 @@
+// Заголовки, общие БЭМ блоки и прочее...
+.title {
+	font-family: $fontFamilyAlethia;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+%anim-x {
+	opacity: 0;
+	visibility: hidden;
+	transform: translate(-100px, 0px);
+	transition: opacity 0.8s ease, transform 0.8s ease;
+	&._watcher-view {
+		visibility: visible;
+		opacity: 1;
+		transform: translate(0px, 0px);
+	}
+}
+%anim-y {
+	opacity: 0;
+	visibility: hidden;
+	transform: translate(0px, 50px);
+	transition: opacity 0.8s ease, transform 0.8s ease;
+	&._watcher-view {
+		visibility: visible;
+		opacity: 1;
+		transform: translate(0px, 0px);
+	}
+}
